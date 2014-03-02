@@ -2,5 +2,5 @@ package People;
 
 public class Swimmer {
 
-	float test;
+	float test = 0;
 }
