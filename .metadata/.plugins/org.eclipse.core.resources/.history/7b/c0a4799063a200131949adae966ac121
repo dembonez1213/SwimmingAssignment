@@ -8,7 +8,7 @@ public class Swimmer {
 	 * |====================================|
 	 */
 	
-	float test = 0;
+	float test
 	/*
 	 * |====================================|
 	 * |		   CONSTRUCTOR(S)			|
