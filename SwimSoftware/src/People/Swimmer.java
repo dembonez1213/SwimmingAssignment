@@ -7,14 +7,18 @@ public class Swimmer {
 	 * |			 VARIABLES				|
 	 * |====================================|
 	 */
-	
-	float test = 0;
+	static float test = 1f;
+		
 	/*
 	 * |====================================|
 	 * |		   CONSTRUCTOR(S)			|
 	 * |====================================|
 	 */
-	
+
+	public static void main(String[] args)
+	{
+		System.out.println(test);
+	}
 	
 	/*
 	 * |====================================|
