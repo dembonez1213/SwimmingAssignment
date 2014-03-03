@@ -7,7 +7,7 @@ public class Swimmer {
 	 * |			 VARIABLES				|
 	 * |====================================|
 	 */
-	static float test = 8f;
+	static float test = 4f;
 		
 	/*
 	 * |====================================|
