@@ -25,7 +25,7 @@ public class Main {
 				fileData += scan.nextLine();
 				if(numLines == -1)
 				{
-					numCategories = fileData.split(delimiter).length;
+					numCategories = fileData.split(",").length;
 				}
 				numLines++;
 			}
