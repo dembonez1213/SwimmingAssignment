@@ -1,0 +1,22 @@
+package Main;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Main {
+
+	public static void main(String[] args)
+	{
+		readFlatFile("C:/Users/Daniel/Desktop/swim_Data.txt",",");
+	}
+	
+	public static void readFlatFile(String fileURL, String delimiter)
+	{
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(fileURL));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}

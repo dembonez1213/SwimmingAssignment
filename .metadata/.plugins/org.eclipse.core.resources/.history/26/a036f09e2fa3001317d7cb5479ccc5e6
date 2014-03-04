@@ -1,0 +1,35 @@
+package Main;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+import People.Swimmer;
+
+public class Main {
+
+	static Swimmer[] swimmers;
+	
+	public static void main(String[] args)
+	{
+		readFlatFile("C:/Users/Daniel/Desktop/swim_Data.txt",",");
+	}
+	
+	public static void readFlatFile(String fileURL, String delimiter)
+	{
+		try {
+			Scanner scan = new Scanner(new FileReader(fileURL));
+			int counter = 0;
+			String swimData = "";
+			while(scan.hasNextLine() == true)
+			{
+				swimData += scan.nextLine() + "\n";
+				counter++;
+			}
+			System.out.println(swimData);
+			System.out.println("NumLines: " + counter);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}

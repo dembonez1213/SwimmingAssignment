@@ -1,0 +1,48 @@
+package Main;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+import People.Swimmer;
+
+public class Main {
+
+	static Swimmer[] swimmers;
+	
+	public static void main(String[] args)
+	{
+		readFlatFile("C:/Users/Daniel/Desktop/swim_Data.txt",",");
+	}
+	
+	public static void readFlatFile(String fileURL, String delimiter)
+	{
+		try {
+			Scanner scan = new Scanner(new FileReader(fileURL));
+			int numLines = -1;
+			String fileData = "";
+			while(scan.hasNextLine() == true)
+			{
+				fileData += scan.nextLine();
+				numLines++;
+			}
+		//	System.out.println(fileData);
+			//System.out.println("NumLines: " + numLines);
+			String[] swimData = fileData.split(delimiter);
+			swimmers = new Swimmer[numLines];
+			for(int x = 1; x < swimmers.length+1; x++)
+			{
+				System.out.println(swimData[(9*x)]);
+				swimmers[x].setID(swimData[9*x]);
+				swimmers[x].setFName(swimData[(9*x)+1]);
+				swimmers[x].setLName(swimData[(9*x)+2]);
+				swimmers[x].setEvent(swimData[(9*x)+3]);
+				swimmers[x].setTime(swimData[(9*x)+4]);
+				swimmers[x].setAge(swimData[(9*x)+5]);
+			}
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}
