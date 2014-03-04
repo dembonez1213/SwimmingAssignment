@@ -17,7 +17,6 @@ public class Main {
 	{
 		readFlatFile("C:/Users/Daniel/Desktop/swim_Data.txt",",");
 		showMenu();
-		checkInput();
 	}
 	
 	public static void readFlatFile(String fileURL, String delimiter)
@@ -68,6 +67,7 @@ public class Main {
 				+ "(b)\tSearch by event\n"
 				+ "(c)\tSearch by ID\n"
 				+ "(d)\tAdd a swimmer\n");
+		checkInput();
 	}
 	
 	public static void checkInput()
@@ -94,7 +94,7 @@ public class Main {
 				System.out.println("Invalid option!");
 			}
 			showMenu();
-			input = getUserInput();
+			input = "";
 		}
 	}
 	

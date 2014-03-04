@@ -17,7 +17,6 @@ public class Main {
 	{
 		readFlatFile("C:/Users/Daniel/Desktop/swim_Data.txt",",");
 		showMenu();
-		checkInput();
 	}
 	
 	public static void readFlatFile(String fileURL, String delimiter)
