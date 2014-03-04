@@ -1,0 +1,88 @@
+package People;
+
+public class Swimmer {
+
+	/*
+	 * |====================================|
+	 * |			 VARIABLES				|
+	 * |====================================|
+	 */
+	private String swimmerID;
+	private String firstName, lastName;
+	private String lastEvent;
+	private int lastTime;
+	private byte age;
+	private String club;
+	private byte place;
+	private boolean disqualified;
+		
+	/*
+	 * |====================================|
+	 * |		   CONSTRUCTOR(S)			|
+	 * |====================================|
+	 */
+	public Swimmer()
+	{
+		swimmerID = "";
+		firstName = "";
+		lastName = "";
+		lastEvent = "";
+		lastTime = 0;
+		age = 0;
+		club = "";
+		place = 0;
+		disqualified = false;
+	}
+
+	/*
+	 * |====================================|
+	 * |			  METHODS				|
+	 * |====================================|
+	 */
+	
+	//==============GETTERS=================
+	public String getID()
+	{
+		return swimmerID;
+	}
+	
+	public String getName()
+	{
+		return firstName + " " + lastName;
+	}
+	
+	public String getFirstName()
+	{
+		return firstName;
+	}
+	
+	public String getLastName()
+	{
+		return lastName;
+	}
+	
+	public String getLastEvent()
+	{
+		return lastEvent;
+	}
+	
+	public int getLastTime()
+	{
+		return lastTime;
+	}
+	
+	public byte getAge()
+	{
+		return age;
+	}
+	
+	public String getClub()
+	{
+		return club;
+	}
+	
+	public byte getPlace()
+	{
+		return place;
+	}
+}

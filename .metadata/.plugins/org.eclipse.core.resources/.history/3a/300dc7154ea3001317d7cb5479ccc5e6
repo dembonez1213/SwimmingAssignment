@@ -1,0 +1,16 @@
+package Utils;
+
+import java.util.Scanner;
+import People.Swimmer;
+import Main.Main;
+
+public class Helper{
+	
+	
+	//TODO: finish this method
+	public static int find()
+	{
+		return 0;
+	}
+	
+}

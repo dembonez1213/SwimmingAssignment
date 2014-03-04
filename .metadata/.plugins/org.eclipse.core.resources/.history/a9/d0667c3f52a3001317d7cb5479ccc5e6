@@ -1,0 +1,41 @@
+package Utils;
+
+import People.Swimmer;
+
+public class Helper{
+	
+	
+	//TODO: finish this method
+	public static int find()
+	{
+		return 0;
+	}
+	
+	public static String searchByEvent(Swimmer[] swimmers, String event)
+	{
+		String searchString = "";
+		for(int x = 0; x < swimmers.length; x++)
+		{
+			if(swimmers[x].getLastEvent().equalsIgnoreCase(event))
+			{
+				searchString+= swimmers[x].toString();
+			}
+			else
+			{
+				if(x == swimmers.length-1 && searchString.equalsIgnoreCase(""))
+				{
+					searchString = "No data for event: \'" + event + "\'";
+				}
+			}
+		}
+		return searchString;
+	}
+	
+	public static String searchByID(Swimmer[] swimmers, String ID)
+	{
+		String swimmer = "";
+		
+		return swimmer;
+	}
+	
+}

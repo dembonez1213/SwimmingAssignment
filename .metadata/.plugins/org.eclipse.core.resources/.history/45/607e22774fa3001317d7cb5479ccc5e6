@@ -1,0 +1,148 @@
+package People;
+
+public class Swimmer {
+
+	/*
+	 * |====================================|
+	 * |			 VARIABLES				|
+	 * |====================================|
+	 */
+	private String swimmerID;
+	private String firstName, lastName;
+	private String lastEvent;
+	private int lastTime;
+	private byte age;
+	private String club;
+	private byte place;
+	private boolean disqualified;
+		
+	/*
+	 * |====================================|
+	 * |		   CONSTRUCTOR(S)			|
+	 * |====================================|
+	 */
+	public Swimmer()
+	{
+		swimmerID = "";
+		firstName = "";
+		lastName = "";
+		lastEvent = "";
+		lastTime = 0;
+		age = 0;
+		club = "";
+		place = 0;
+		disqualified = false;
+	}
+
+	/*
+	 * |====================================|
+	 * |			  METHODS				|
+	 * |====================================|
+	 */
+	
+	//==============GETTERS=================
+	public String getID()
+	{
+		return swimmerID;
+	}
+	
+	public String getName()
+	{
+		return firstName + " " + lastName;
+	}
+	
+	public String getFirstName()
+	{
+		return firstName;
+	}
+	
+	public String getLastName()
+	{
+		return lastName;
+	}
+	
+	public String getLastEvent()
+	{
+		return lastEvent;
+	}
+	
+	public int getLastTime()
+	{
+		return lastTime;
+	}
+	
+	public byte getAge()
+	{
+		return age;
+	}
+	
+	public String getClub()
+	{
+		return club;
+	}
+	
+	public byte getPlace()
+	{
+		return place;
+	}
+	
+	public boolean isDisqualified()
+	{
+		return disqualified;
+	}
+	
+	public String toString()
+	{
+		return swimmerID + "\t" + firstName + "\t\t" + lastName + "\t\t" + lastEvent + "\t"
+				+ lastTime + "\t" + age + "\t" + club + "\t" + place + "\t" + disqualified;
+	}
+	
+	//==============SETTERS=================
+	//TODO: change to ensure ID is in correct format, return false if not
+	public void setID(String id)
+	{
+		swimmerID = id;
+	}
+	
+	public void setFirstName(String fn)
+	{
+		firstName = fn;
+	}
+	
+	public void setLastName(String ln)
+	{
+		lastName = ln;
+	}
+	
+	public void setLastEvent(String event)
+	{
+		lastEvent = event;
+	}
+	
+	public void setLastTime(int time)
+	{
+		lastTime = time;
+	}
+	
+	public void setAge(byte age)
+	{
+		this.age = age;
+	}
+	
+	public void setClub(String club)
+	{
+		this.club = club;
+	}
+	
+	public void setPlace(byte place)
+	{
+		this.place = place;
+	}
+	
+	public void setDisqualified(boolean disqualified)
+	{
+		this.disqualified = disqualified;
+	}
+	
+	
+}

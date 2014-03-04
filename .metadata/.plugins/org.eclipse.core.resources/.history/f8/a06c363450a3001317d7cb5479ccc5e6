@@ -1,0 +1,17 @@
+package Utils;
+
+public class Helper{
+	
+	
+	//TODO: finish this method
+	public static int find()
+	{
+		return 0;
+	}
+	
+	public String searchByEvent(String event)
+	{
+		
+	}
+	
+}

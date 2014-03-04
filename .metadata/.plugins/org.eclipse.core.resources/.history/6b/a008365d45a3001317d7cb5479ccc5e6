@@ -1,0 +1,30 @@
+package People;
+
+public class Swimmer {
+
+	/*
+	 * |====================================|
+	 * |			 VARIABLES				|
+	 * |====================================|
+	 */
+	private String swimmerID;
+	private String firstName, lastName;
+	
+		
+	/*
+	 * |====================================|
+	 * |		   CONSTRUCTOR(S)			|
+	 * |====================================|
+	 */
+
+	public static void main(String[] args)
+	{
+		System.out.println(test);
+	}
+	
+	/*
+	 * |====================================|
+	 * |			  METHODS				|
+	 * |====================================|
+	 */
+}

@@ -1,0 +1,35 @@
+package People;
+
+public class Swimmer {
+
+	/*
+	 * |====================================|
+	 * |			 VARIABLES				|
+	 * |====================================|
+	 */
+	private String swimmerID;
+	private String firstName, lastName;
+	private String lastEvent;
+	private int lastTime;
+	private byte age;
+	private String club;
+	private byte place;
+	private boolean disqualified;
+		
+	/*
+	 * |====================================|
+	 * |		   CONSTRUCTOR(S)			|
+	 * |====================================|
+	 */
+
+	public static void main(String[] args)
+	{
+		System.out.println(test);
+	}
+	
+	/*
+	 * |====================================|
+	 * |			  METHODS				|
+	 * |====================================|
+	 */
+}

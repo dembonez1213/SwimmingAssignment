@@ -1,0 +1,37 @@
+package Utils;
+
+import java.util.Scanner;
+
+public class Helper{
+	
+	private static Scanner scan = new Scanner(System.in);
+	
+	//TODO: finish this method
+	public static int find()
+	{
+		return 0;
+	}
+	
+	public static void showMenu()
+	{
+		
+	}
+	
+	private static String getUserInput()
+	{
+		return scan.nextLine();
+	}
+	
+	private static boolean checkQuit(String checkString)
+	{
+		if(checkString.equalsIgnoreCase("exit") || checkString.equalsIgnoreCase("quit"))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+}

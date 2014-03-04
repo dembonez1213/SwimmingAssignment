@@ -1,0 +1,18 @@
+package Utils;
+
+public class Helper{
+	
+	private Scanner scanner;
+	
+	//TODO: finish this method
+	public static int find()
+	{
+		return 0;
+	}
+	
+	public static showMenu()
+	{
+		while()
+	}
+	
+}
